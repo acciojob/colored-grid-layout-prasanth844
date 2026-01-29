@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Colored Grid Layout</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html>
+  <body>
+    <div
+      id="grid"
+      style="
+        display: grid;
+        grid-template-rows: 124px 124px 124px 124px 124px;
+        grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
+        gap: 10px;
+      "
+    >
+      <div style="background-color: green; color: white; font-size: 4vw; grid-column: span 4 / auto;">
+        1
+      </div>
 
-  <div id="grid">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
-  </div>
+      <div style="background-color: green; color: white; font-size: 4vw; grid-row: span 4 / auto;">
+        2
+      </div>
 
-</body>
+      <div style="background-color: green; color: white; font-size: 4vw;">
+        3
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw; grid-column: span 2 / auto;">
+        4
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw; grid-column: span 2 / auto;">
+        5
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw;">
+        6
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw;">
+        7
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw;">
+        8
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw;">
+        9
+      </div>
+
+      <div style="background-color: green; color: white; font-size: 4vw; grid-column: span 3 / auto;">
+        10
+      </div>
+    </div>
+  </body>
 </html>
