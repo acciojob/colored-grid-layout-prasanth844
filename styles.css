@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  height: 100vh;
+}
+
+.box {
+  background-color: green;
+  color: white;
+  font-size: 4vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+/* Grid positioning */
+.box1 {
+  grid-column: 1 / 5;
+}
+
+.box2 {
+  grid-row: 2 / 6;
+}
+
+.box4 {
+  grid-column: span 2;
+}
+
+.box5 {
+  grid-column: span 2;
+}
+
+.box10 {
+  grid-column: span 3;
+}
